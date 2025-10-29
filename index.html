@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎬 Movie Ticket Booking System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🎟️ Movie Ticket Booking</h1>
+
+  <label>Movie:</label>
+  <select id="movie">
+    <option value="Spiderman">Spiderman</option>
+    <option value="Made In India">Made In India</option>
+    <option value="3 Idiots">3 Idiots</option>
+  </select>
+
+  <h3>Select Seats</h3>
+  <div id="seatGrid"></div>
+
+  <label>Date:</label>
+  <input type="number" id="date" placeholder="e.g. 15">
+
+  <label>Show Time:</label>
+  <select id="time">
+    <option>10:30 AM</option>
+    <option>1:30 PM</option>
+    <option>3:30 PM</option>
+    <option>7:00 PM</option>
+  </select>
+
+  <button onclick="bookTicket()">Book Ticket</button>
+  <button onclick="viewQueue()">View Queue</button>
+  <button onclick="processBooking()">Process (Dequeue)</button>
+
+  <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
